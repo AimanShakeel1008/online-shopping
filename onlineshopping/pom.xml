@@ -12,6 +12,13 @@
 		<spring.version>5.0.0.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+		<!-- Link backend project -->
+		<dependency>
+			<groupId>net.aiman</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- JavaEE API -->
 		<dependency>
 			<groupId>javax</groupId>
