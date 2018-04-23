@@ -82,6 +82,12 @@
 				test="${userClickShowProduct==true}">
 				<%@include file="singleProduct.jsp"%>
 			</c:if>
+			
+			<!-- Load only when user click manage product -->
+			<c:if
+				test="${userClickManageProducts==true}">
+				<%@include file="manageProducts.jsp"%>
+			</c:if>
 		</div>
 
 		<!-- footer comes here -->
@@ -89,6 +95,9 @@
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
+		
+		<!-- jQuery Validators -->
+		<script src="${js}/jquery.validate.js"></script>
 
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
@@ -100,7 +109,10 @@
 
 		<!-- DataTable Plugin -->
 		<script src="${js}/dataTables.bootstrap.js"></script>
-
+		
+		<!-- Bootbox js -->
+		<script src="${js}/bootbox.min.js"></script>
+		
 		<!-- self coded javascript -->
 		<script src="${js}/myapp.js"></script>
 	</div>
